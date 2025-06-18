@@ -8,7 +8,11 @@ public class Main {
         System.out.println("Age = " + tim.getAge());
         System.out.println("Pay = " + tim.collectPay());
 
-        Employee joe = new Employee("Joe", "11/11/1989", "01/01/2020");
+        SalariedEmployee joe = new SalariedEmployee("Joe", "11/11/1989", "01/01/2020", 4000);
         System.out.println(joe);
+        System.out.println("Joe's paycheck = $" + joe.collectPay());
+
+        joe.retire();
+        System.out.println("Joe's Pension check = $" + joe.collectPay());
     }
 }
